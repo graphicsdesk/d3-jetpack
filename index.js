@@ -12,6 +12,7 @@ import at from "./src/at";
 import st from "./src/st";
 
 import appendBackedText from "./src/appendBackedText";
+import drawIn from "./src/drawIn";
 
 selection.prototype.translate = translateSelection;
 transition.prototype.translate = translateSelection;
@@ -28,6 +29,7 @@ transition.prototype.st = st;
 selection.prototype.prop = selection.prototype.property;
 
 selection.prototype.appendBackedText = appendBackedText;
+selection.prototype.drawIn = drawIn;
 
 export {default as wordwrap} from "./src/wordwrap";
 export {default as parseAttributes} from "./src/parseAttributes";
