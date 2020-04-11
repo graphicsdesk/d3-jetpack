@@ -30,7 +30,7 @@ Draws a path from head to tail by interpolating the length of `stroke-dashoffset
 selection.drawIn();
 ```
 
-<a name="fadeOut" href="#fadeOut">#</a> selection.<b>fadeOut</b>(<i>[shouldRemove]</i>) [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/fadeOut.js "Source")
+<a name="fadeOut" href="#fadeOut">#</a> selection.<b>fadeOut</b>([<i>shouldRemove</i>]) [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/fadeOut.js "Source")
 
 Fades out a selection using opacity. The optional boolean _shouldRemove_ specifies whether to remove a selection after it fades out (defaults to true).
 
