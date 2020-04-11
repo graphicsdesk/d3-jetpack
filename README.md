@@ -60,6 +60,10 @@ selection.append('text').backedTSpans(['Multiple', 'lines'], 20);
 
 The optional second argument sets the line height (defaults to 15).
 
+#### Features wishlist
+
+* Creating lines in different segments so they can be animated by section or each section can have different styles (e.g. a continuously dash-offseting dotted line)
+
 ### Original
 
 <a name="append" href="#append">#</a> selection.<b>append</b>(<i>selector</i>) [<>](https://github.com/gka/d3-jetpack/blob/master/src/append.js "Source")
