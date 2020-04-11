@@ -1,4 +1,4 @@
-d3-jetpack is a set of nifty convenience wrappers that speed up your daily work with d3.js
+d3-jetpack is a set of nifty convenience wrappers that speed up your daily work with d3.js. This fork of d3-jetpack adds more.
 
 [![jetpack](http://68.media.tumblr.com/tumblr_m4kkxd8nWB1rwkrdbo1_500.jpg)](http://myjetpack.tumblr.com/post/23725103159)
 
@@ -6,9 +6,61 @@ d3-jetpack is a set of nifty convenience wrappers that speed up your daily work 
 
 ## Usage
 
-If you use NPM, `npm install d3-jetpack`. Otherwise, download the latest [d3v4+jetpack.js](https://raw.githubusercontent.com/gka/d3-jetpack/master/build/d3v4%2Bjetpack.js).
+If you use NPM, `npm install spec-journalism/d3-jetpack`.
 
-Here's what's in the package:
+### What this fork adds
+
+<a name="appendBackedText" href="#appendBackedText">#</a> selection.<b>appendBackedText</b>(<i>value</i>) [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/appendBackedText.js "Source")
+
+Appends text that has a slightly transparent white backing. This helps contrast text against backgrounds and other graphical elements. For example:
+
+[<img src="https://i.imgur.com/BJZzz20.png" height="295">](https://github.com/spec-journalism/ivy-coronavirus-response)
+
+```js
+selection.appendBackedText(d => d.label);
+```
+
+The function creates two `tspan`s but returns the parent `text` element. For backing multi-line SVG text, see [_selection_.backedTspans](#backedTspans).
+
+<a name="drawIn" href="#drawIn">#</a> selection.<b>drawIn</b>() [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/drawIn.js "Source")
+
+Draws a path from head to tail by interpolating the length of `stroke-dashoffset`. Leaves a `stroke-dasharray` afterwards, which you may want to set to 0. ([Why does this work?](https://jakearchibald.com/2013/animated-line-drawing-svg/))
+
+```js
+selection.drawIn();
+```
+
+<a name="fadeIn" href="#fadeIn">#</a> selection.<b>fadeIn</b>() [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/fadeIn.js "Source")
+
+Fades in a selection using opacity.
+
+```js
+selection.fadeIn();
+```
+
+<a name="fadeOut" href="#fadeOut">#</a> selection.<b>fadeOut</b>() [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/fadeOut.js "Source")
+
+Fades out a selection using opacity.
+
+```js
+selection.fadeOut();
+```
+
+<a name="backedTspans" href="#backedTspans">#</a> selection.<b>backedTspans</b>(array) [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/backedTspans.js "Source")
+
+_In progress._ Essentially the generalized underlying function of [_selection_.appendBackedText](#appendBackedText). [d3.wordwrap](https://github.com/gka/d3-jetpack#wordwrap) can come in handy.
+
+```js
+selection.append('text')
+  .backedTspans(function(d) {
+      return d.text.split('\n');
+  });
+selection.append('text').backedTSpans(['Multiple', 'lines'], 20);
+```
+
+The optional second argument sets the line height (defaults to 15).
+
+### Original
 
 <a name="append" href="#append">#</a> selection.<b>append</b>(<i>selector</i>) [<>](https://github.com/gka/d3-jetpack/blob/master/src/append.js "Source")
 
