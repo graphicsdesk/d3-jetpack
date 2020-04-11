@@ -11,6 +11,8 @@ import appendMany from "./src/appendMany";
 import at from "./src/at";
 import st from "./src/st";
 
+import appendBackedText from "./src/appendBackedText";
+
 selection.prototype.translate = translateSelection;
 transition.prototype.translate = translateSelection;
 selection.prototype.append = append;
@@ -24,6 +26,8 @@ selection.prototype.st = st;
 transition.prototype.at = at;
 transition.prototype.st = st;
 selection.prototype.prop = selection.prototype.property;
+
+selection.prototype.appendBackedText = appendBackedText;
 
 export {default as wordwrap} from "./src/wordwrap";
 export {default as parseAttributes} from "./src/parseAttributes";
