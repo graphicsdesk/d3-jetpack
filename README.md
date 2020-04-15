@@ -1,4 +1,4 @@
-d3-jetpack is a set of nifty convenience wrappers that speed up your daily work with d3.js. This fork of d3-jetpack adds more.
+d3-jetpack is a set of nifty convenience wrappers that speed up your daily work with d3.js. This fork of d3-jetpack adds a few more.
 
 [![jetpack](http://68.media.tumblr.com/tumblr_m4kkxd8nWB1rwkrdbo1_500.jpg)](http://myjetpack.tumblr.com/post/23725103159)
 
@@ -63,6 +63,8 @@ The optional second argument sets the line height (defaults to 15).
 #### Features wishlist
 
 * Creating lines in different segments so they can be animated by section or each section can have different styles (e.g. a continuously dash-offseting dotted line)
+
+* [This patch](https://github.com/spec-journalism/ivy-coronavirus-response/blob/master/patches/d3-jetpack%2B2.0.20.patch) of `tspans` returns a join selection instead of an enter selection
 
 ### Original
 
