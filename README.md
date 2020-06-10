@@ -22,6 +22,19 @@ selection.appendBackedText(d => d.label);
 
 The function creates two `tspan`s but returns the parent `text` element. For backing multi-line SVG text, see [_selection_.backedTspans](#backedTspans).
 
+_TODO: Look into Kevin Quealy's [most recent structure](https://www.nytimes.com/interactive/2020/06/10/upshot/black-lives-matter-attitudes.html) for this:_
+
+```html
+<text class="g-halo" transform="translate(X, Y)">
+  <tspan x="0" dy="0">Floyd</tspan>
+  <tspan x="0" dy="15">death</tspan>
+</text>
+<text transform="translate(X, Y)">
+  <tspan x="0" dy="0">Floyd</tspan>
+  <tspan x="0" dy="15">death</tspan>
+</text>
+```
+
 <a name="drawIn" href="#drawIn">#</a> selection.<b>drawIn</b>() [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/drawIn.js "Source")
 
 Draws a path from head to tail by interpolating the length of `stroke-dashoffset`. Leaves a `stroke-dasharray` afterwards, which you may want to set to 0. ([Why does this work?](https://jakearchibald.com/2013/animated-line-drawing-svg/))
