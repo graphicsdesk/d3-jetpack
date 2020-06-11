@@ -35,6 +35,9 @@ _TODO: Look into Kevin Quealy's [most recent structure](https://www.nytimes.com/
 </text>
 ```
 
+_For HTML text, see [`text-shadow`](https://www.nytimes.com/interactive/2016/07/07/world/americas/bolivia-climate-change-lake-poopo.html?smid=tw-share&_r=0)._
+<a href="https://www.nytimes.com/interactive/2016/07/07/world/americas/bolivia-climate-change-lake-poopo.html?smid=tw-share&_r=0"><img width="80px" src="https://i.imgur.com/tgqFObY.png"/></a>
+
 <a name="drawIn" href="#drawIn">#</a> selection.<b>drawIn</b>() [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/drawIn.js "Source")
 
 Draws a path from head to tail by interpolating the length of `stroke-dashoffset`. Leaves a `stroke-dasharray` afterwards, which you may want to set to 0. ([Why does this work?](https://jakearchibald.com/2013/animated-line-drawing-svg/))
