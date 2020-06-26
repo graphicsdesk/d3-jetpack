@@ -6,7 +6,7 @@ d3-jetpack is a set of nifty convenience wrappers that speed up your daily work 
 
 ## Usage
 
-If you use NPM, `npm install spec-journalism/d3-jetpack`.
+If you use NPM, `npm install @graphicsdesk/d3-jetpack`.
 
 ### What this fork adds
 
