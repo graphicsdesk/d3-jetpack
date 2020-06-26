@@ -22,7 +22,7 @@ selection.appendBackedText(d => d.label);
 
 The function creates two `tspan`s but returns the parent `text` element. For backing multi-line SVG text, see [_selection_.backedTspans](#backedTspans).
 
-_TODO: Look into Kevin Quealy's [most recent structure](https://www.nytimes.com/interactive/2020/06/10/upshot/black-lives-matter-attitudes.html) for this:_
+_TODO: Refer to [these](https://www.nytimes.com/interactive/2020/04/02/us/coronavirus-social-distancing.html) [structures](https://www.nytimes.com/interactive/2020/06/10/upshot/black-lives-matter-attitudes.html) for doing this:_
 
 ```html
 <text class="g-halo" transform="translate(X, Y)">
