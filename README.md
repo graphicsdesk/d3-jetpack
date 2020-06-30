@@ -35,6 +35,23 @@ _TODO: Refer to [these](https://www.nytimes.com/interactive/2020/04/02/us/corona
 </text>
 ```
 
+_Also, this is from Data Wrapper:_
+
+```html
+<g class="label" transform="translate(569,278.1790520822612)">
+  <text class="label value chart-text bg" style="fill: rgb(255, 255, 255); stroke: rgb(255, 255, 255); text-anchor: middle; font-size: 12px; dominant-baseline: text-after-edge;">
+    <tspan x="0" dy="0" y="-26" style="fill: rgb(92, 92, 92);">McAllen-</tspan>
+    <tspan x="0" dy="13" style="fill: rgb(92, 92, 92);">Edinburg-</tspan>
+    <tspan x="0" dy="13" style="fill: rgb(92, 92, 92);">Mission, TX</tspan>
+  </text>
+  <text class="label value chart-text" style="text-anchor: middle; font-size: 12px; dominant-baseline: text-after-edge;">
+    <tspan x="0" dy="0" y="-26" style="fill: rgb(92, 92, 92);">McAllen-</tspan>
+    <tspan x="0" dy="13" style="fill: rgb(92, 92, 92);">Edinburg-</tspan>
+    <tspan x="0" dy="13" style="fill: rgb(92, 92, 92);">Mission, TX</tspan>
+  </text>
+</g>
+```
+
 _For HTML text, see [`text-shadow`](https://www.nytimes.com/interactive/2016/07/07/world/americas/bolivia-climate-change-lake-poopo.html?smid=tw-share&_r=0)._
 <a href="https://www.nytimes.com/interactive/2016/07/07/world/americas/bolivia-climate-change-lake-poopo.html?smid=tw-share&_r=0"><img width="80px" src="https://i.imgur.com/tgqFObY.png"/></a>
 
