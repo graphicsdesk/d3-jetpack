@@ -26,12 +26,12 @@ _TODO: Refer to [these](https://www.nytimes.com/interactive/2020/04/02/us/corona
 
 ```html
 <text class="g-halo" transform="translate(X, Y)">
-  <tspan x="0" dy="0">Floyd</tspan>
-  <tspan x="0" dy="15">death</tspan>
+  <tspan x="0" dy="0">Hello</tspan>
+  <tspan x="0" dy="15">world</tspan>
 </text>
 <text transform="translate(X, Y)">
-  <tspan x="0" dy="0">Floyd</tspan>
-  <tspan x="0" dy="15">death</tspan>
+  <tspan x="0" dy="0">Hello</tspan>
+  <tspan x="0" dy="15">world</tspan>
 </text>
 ```
 
