@@ -1,9 +1,5 @@
 d3-jetpack is a set of nifty convenience wrappers that speed up your daily work with d3.js. This fork of d3-jetpack adds a few more.
 
-[![jetpack](http://68.media.tumblr.com/tumblr_m4kkxd8nWB1rwkrdbo1_500.jpg)](http://myjetpack.tumblr.com/post/23725103159)
-
-(comic by [Tom Gauld](http://myjetpack.tumblr.com/]))
-
 ## Usage
 
 If you use NPM, `npm install @graphicsdesk/d3-jetpack`.
@@ -21,6 +17,11 @@ selection.appendBackedText(d => d.label);
 ```
 
 The function creates two `tspan`s but returns the parent `text` element. For backing multi-line SVG text, see [_selection_.backedTspans](#backedTspans).
+
+_For HTML/ai2html text, use `text-shadow`_
+```css
+text-shadow: rgb(255 255 255 / 30%) 1px 0px 0px, rgb(255 255 255 / 30%) 1px 1px 0px, rgb(255 255 255 / 30%) -1px 1px 0px, rgb(255 255 255 / 30%) -1px 0.5px 0px, rgb(255 255 255 / 30%) -1px -1px 0px, rgb(255 255 255 / 30%) 1px -1px 0px, rgb(255 255 255 / 30%) 1px -1px 0px;
+```
 
 _TODO: Refer to [these](https://www.nytimes.com/interactive/2020/04/02/us/coronavirus-social-distancing.html) [structures](https://www.nytimes.com/interactive/2020/06/10/upshot/black-lives-matter-attitudes.html) for doing this:_
 
@@ -51,9 +52,6 @@ _Also, this is from Data Wrapper:_
   </text>
 </g>
 ```
-
-_For HTML text, see [`text-shadow`](https://www.nytimes.com/interactive/2016/07/07/world/americas/bolivia-climate-change-lake-poopo.html?smid=tw-share&_r=0)._
-<a href="https://www.nytimes.com/interactive/2016/07/07/world/americas/bolivia-climate-change-lake-poopo.html?smid=tw-share&_r=0"><img width="80px" src="https://i.imgur.com/tgqFObY.png"/></a>
 
 <a name="drawIn" href="#drawIn">#</a> selection.<b>drawIn</b>() [<>](https://github.com/spec-journalism/d3-jetpack/blob/master/src/drawIn.js "Source")
 
